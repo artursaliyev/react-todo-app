@@ -127,7 +127,7 @@ export default class App extends Component {
         <AppHeader toDo={todoCount} done={doneCount} />
 
         <div className="top-panel d-flex">
-          <SearchPanel onTermChange={this.onTermChange} />
+          <SearchPanel term={term} onTermChange={this.onTermChange} />
           <ItemStatusFilter
             filter={filter}
             onFilterChange={this.onFilterChange}
